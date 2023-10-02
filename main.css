@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://assets.nflxext.com/ffe/siteui/vlv3/00103100-5b45-4d4f-af32-342649f1bda5/64774cd8-5c3a-4823-a0bb-1610d6971bd4/IN-en-20230821-popsignuptwoweeks-perspective_alpha_website_large.jpg) no-repeat center;
+    background-size: auto;
+    
+}
+.upper{
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: xx-large;
+  }
+.logo{
+    width: 250px;
+    padding: 24px 3%;
+    cursor: pointer;
+    object-position: left top;
+}
+.header{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    object-position: center;
+    position: center; 
+    height: 85vh ;
+    width: 450px;
+    padding: 50px 50px 20px;
+    background: rgba(15, 15, 15, 0.726); 
+    border-radius: 5px;
+    color: #fff;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: blue;
+}
+
+.tooltip::after {
+    content: "The information collected by Google reCAPTCHA is subject to the Google Privacy Policy and Terms of Service, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalised advertising by Google).";
+    visibility: hidden;
+    width: 160px;
+    min-width: 150;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tooltip:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+.footer {
+    height: 20vh ;
+    width: 100%;
+    padding: 50px 50px 20px;
+    background: rgba(15, 15, 15, 0.726); 
+    border-radius: 5px;
+    color: #fff;
+}
+.center-button {
+    text-align: center;
+  }
+  
+  .SignIn {
+    object-position: center;
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 15px 150px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid  #646464;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color:  #646464; 
+  }
+  
+  
+  .input-group label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #777;
+    pointer-events: none;
+    transition: top 0.3s ease, left 0.3s ease, font-size 0.3s ease;
+  }
+  
+  .input-group input:focus + label,
+  .input-group input:valid + label {
+    top: -10px;
+    left: 5px;
+    font-size: 12px;
+  }
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    color: #646464;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 10px;
+    background-color: #646464;
+    color: #646464;
+
+}
+
+.NeedHelp {
+    color: #646464;
+    text-decoration: none; 
+    margin-left: auto;
+}
+.protected{
+    color: #646464;
+    font-size: small;
+}
+.newto{
+    color: #646464;
+}
+.SignUp{
+    text-decoration: none;
+    color: #fff;
+}
+.question{
+    margin-top: 0%;
+    margin-bottom: 20px;
+    color: #646464;
+    font-size: large;
+}
+.footer a {
+    color: #646464; 
+    text-decoration: none;
+    padding: 0 100px;
+    text-align: auto;
+
+}
